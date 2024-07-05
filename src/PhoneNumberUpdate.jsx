@@ -42,8 +42,8 @@ const PhoneNumberUpdate = () => {
           >
             Add
           </button>
-          <form method="dialog px-3 ">
-            <button className="btn ">Add</button>
+          <form method="dialog" >
+            <button className="btn" onClick={(event)=>{event.preventDefault()}}>Close </button>
           </form>
         </div>
       </dialog>
