@@ -18,8 +18,8 @@ let Navbar = () => {
   let [logout , {isLoading , isError}] = useLogoutMutation();
 
   let handleLogout = async () => {
-      // await logout();
-        // refetch();
+      await logout();
+        refetch();
       navigate("/login");
   } 
 
