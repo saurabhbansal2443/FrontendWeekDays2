@@ -24,7 +24,7 @@ const Signup = () => {
    let result =  await signup(values)
     console.log(result);
     if(result.data.result == true ){
-      refetch()
+      await refetch()
       navigate("/");
     }else{
       setErrMsg(result.data.message)

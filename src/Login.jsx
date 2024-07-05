@@ -23,7 +23,7 @@ const Login= () => {
       setErrMsg(null);
       let result = await login(values);
        if(result.data.result == true ){
-        refetch();
+        await refetch();
         navigate("/");
        }else{
         setErrMsg(result.data.message)
