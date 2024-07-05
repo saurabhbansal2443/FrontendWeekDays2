@@ -12,9 +12,9 @@ const ProtectedRoute = (Component) => {
 
     console.log(user);
 
-    // useEffect(() => {
-    //   refetch();
-    // }, []);
+    useEffect(() => {
+      refetch();
+    }, []);
 
     useEffect(() => {
         if( isLoading) return ;
