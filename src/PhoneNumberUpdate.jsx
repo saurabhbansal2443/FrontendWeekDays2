@@ -36,14 +36,14 @@ const PhoneNumberUpdate = () => {
             value={phoneNumber}
             onChange={(event) => setPhoneNumber(event.target.value)}
           />
-
+          <button
+            className="btn btn-outline btn-primary"
+            onClick={addPhoneNumber}
+          >
+            Add
+          </button>
           <form method="dialog px-3 ">
-            <button
-              className="btn btn-outline btn-primary"
-              onClick={addPhoneNumber}
-            >
-              Add
-            </button>
+            <button className="btn ">Add</button>
           </form>
         </div>
       </dialog>
